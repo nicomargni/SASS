@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Rowdies', cursive;
+    background-image: linear-gradient(to left, red, yellow)
+}
+
+/*------------------Grid y Flex-------------*/
+/*Index*/
+.mainA{
+    margin: 10px;
+}
+.navegacion {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url(../imagenes/header.png);
+    background-size: contain;
+}
+
+.navegacion>* {
+    transform: rotate(-20deg);
+    transition: 2s;
+}
+
+.navegacion>*:hover {
+    color: rgb(128, 83, 0);
+    transform: scale(1.2);
+}
+
+.article {
+    color: white;
+    text-align: left;
+    background-image: url(../imagenes/NoticiasVideojuegos.jpg);
+}
+
+.left {
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../imagenes/lanzRecientes.jpg);
+}
+
+.right {
+    background-image: url(../imagenes/reseñas.jpg);
+    background-size: contain;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: rgb(2, 92, 2);
+}
+
+.vaultBoy {
+    display: flex;
+    background-image: url(../imagenes/vault-boy.jpg);
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*-------------------------------------------------------Galeria---------------------------------------*/
+
+.tituloG {
+    display: flex;
+    justify-content: center;
+    color: darkgreen;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+.carouselGaleria{
+    margin-bottom: 10px;
+}
+.carousel-item>
+img{
+    margin-left: 300px;
+    max-width: 400px;
+    height: 400px;
+}
+@media (max-width: 600px){
+    .carousel-item>
+    img{
+        margin-left: 30px;
+    }
+}
+
+/*-----------------------------------------Contactanos---------------------------------------*/
+.form {
+    border: solid green;
+}
+
+/*-----------------------------------------Comunidad-------------------------------------*/
+
+.comunidadMain {
+    background-image: linear-gradient(to left, white, yellow);
+    border: 1px solid black;
+}
+
+.instagram {
+    margin-top: 10px;
+    background-image: url(../imagenes/instagram.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.facebook {
+    margin-top: 10px;
+    background-image: url(../imagenes/facebook.png);
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.twitter {
+    margin-top: 10px;
+    background-image: url(../imagenes/twitterlogo.png);
+    background-size: cover;
+    width: 300px;
+    height: 250px;
+}
+
+.tituloComunidad {
+    display: flex;
+    justify-content: center;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------------------------------------Animaciones------------------------------------*/
+
+.animaciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    border: none;
+
+}
+
+.coin {
+    animation-name: coin;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.coin> img{
+    width: 40px;
+    height: 40px;
+}
+
+@keyframes coin {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+/*----------------------------------------- Info -----------------------------------------*/
+
+.mainInfo{
+    border: 2px solid blue;
+}
+.objetivosInfo{
+    border: 1px solid black;
+}
+.logrosInfo{
+    border: 1px solid black;
+}
+
+
+/*-----------------------------------------Media Queries----------------------------------*/
+

@@ -1,0 +1,142 @@
+@import "color";
+@import "fuentes";
+@import "nav";
+@import "animaciones";
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $fuente-principal;
+	background-image: linear-gradient(to left, red, yellow);
+}
+/*Index*/
+.mainA {
+	margin: 10px;
+}
+.article {
+	color: white;
+	text-align: left;
+	background-image: url(../imagenes/NoticiasVideojuegos.jpg);
+	h2{
+		color: $color-titulos;
+	}
+}
+.left {
+	display: flex;
+	color: white;
+	align-items: center;
+	flex-direction: column;
+	background-image: url(../imagenes/lanzRecientes.jpg);
+	h2{
+		color: $color-titulos;
+	}
+}
+.right {
+	background-image: url(../imagenes/reseñas.jpg);
+	background-size: contain;
+}
+.center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: black;
+	h3{
+		color: $color-titulos;
+	}
+}
+.footer {
+	background-color: rgb(2, 92, 2);
+}
+.vaultBoy {
+	display: flex;
+	background-image: url(../imagenes/vault-boy.jpg);
+	background-size: contain;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+/*-------------------------------------------------------Galeria---------------------------------------*/
+.tituloG {
+	display: flex;
+	justify-content: center;
+	color: $color-titulos;
+}
+.main {
+	display: flex;
+	justify-content: center;
+}
+.carouselGaleria {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
+.carousel{
+	width: 300px;
+	height: 400px;
+	.carousel-item{
+		max-width: 300px;
+		max-height: 400px;
+	}
+	background-color: black;
+}
+/*-----------------------------------------Contactanos---------------------------------------*/
+.form {
+	border: solid green;
+	h2{
+		 color: $color-titulos;
+	}
+}
+/*-----------------------------------------Comunidad-------------------------------------*/
+.comunidadMain {
+	background-image: linear-gradient(to left, white, yellow);
+	border: 1px solid black;
+}
+.instagram {
+	margin-top: 10px;
+	background-image: url(../imagenes/instagram.jpg);
+	background-size: cover;
+	width: 250px;
+	height: 250px;
+}
+.facebook {
+	margin-top: 10px;
+	background-image: url(../imagenes/facebook.png);
+	background-size: cover;
+	width: 250px;
+	height: 250px;
+}
+.twitter {
+	margin-top: 10px;
+	background-image: url(../imagenes/twitterlogo.png);
+	background-size: cover;
+	width: 300px;
+	height: 250px;
+}
+.tituloComunidad {
+	display: flex;
+	justify-content: center;
+	color:$color-titulos;
+}
+.redes {
+	display: flex;
+	justify-content: center;
+}
+
+/*----------------------------------------- Info -----------------------------------------*/
+.mainInfo {
+	border: 2px solid blue;
+	h2{
+		color:$color-titulos;
+	}
+	h3{
+		color:$color-titulos;
+	}
+}
+.objetivosInfo {
+	border: 1px solid black;
+}
+.logrosInfo {
+	border: 1px solid black;
+}

@@ -1,0 +1,20 @@
+.navegacion {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-between;
+	padding: 20px;
+	background-image: url(../imagenes/header.png);
+	background-size: contain;
+	a{
+		color: $color-primario-nav;
+	}
+	>* {
+		transform: rotate(-20deg);
+		transition: 2s;
+		&:hover {
+			color: $color-secundario-nav;
+			transform: scale(1.2);
+		}
+	}
+}
